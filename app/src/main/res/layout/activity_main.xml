@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:id="@+id/act_drawlayout"
+    >
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/act_recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+
+    <!--layout_gravity控制菜单显示的侧面位置-->
+    <LinearLayout
+        android:layout_width="200dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="@color/colorPrimary"
+        android:fitsSystemWindows="true"
+        android:orientation="vertical"
+        android:clickable="true"
+        >
+
+        <TextView
+            android:id="@+id/act_image_classify"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:text="图片分类"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:textColor="#ffffff"
+            android:layout_marginTop="60dp"
+            />
+        <TextView
+            android:id="@+id/act_image_set_line"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:text="列表设置"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:textColor="#ffffff"
+            android:layout_marginTop="40sp"
+            />
+        <TextView
+            android:id="@+id/act_image_set_fail"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:text="文件设置"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:textColor="#ffffff"
+            android:layout_marginTop="40sp"
+            android:visibility="invisible"
+            />
+        <TextView
+            android:id="@+id/act_image_set_sort"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:text="排序设置"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:textColor="#ffffff"
+            android:layout_marginTop="40sp"
+            android:visibility="invisible"
+            />
+
+
+        <!--fitsSystemWindows控制布局在沉浸状态时保持内容在状态栏以下-->
+    </LinearLayout>
+
+
+</android.support.v4.widget.DrawerLayout>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/classify_act_recyclervew"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="80dp"
+            />
+
+        <TextView
+            android:id="@+id/classify_act_add_file"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_alignBottom="@id/classify_act_recyclervew"
+            android:layout_marginBottom="30dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:text="添加文件"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:textColor="#00ff00"
+            android:background="@drawable/classify_act_add_file_shape"
+            />
+
+    </RelativeLayout>
+
+</LinearLayout>

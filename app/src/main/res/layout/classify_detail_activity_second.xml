@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.example.administrator.myapplication.base.DragGridView
+            android:id="@+id/classify_detail_act_recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="80dp"
+            />
+
+
+
+        <LinearLayout
+            android:id="@+id/classify_detail_act_linearlayout"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            >
+
+
+            <TextView
+                android:id="@+id/classify_detail_act_add_image"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:background="@drawable/classify_detail_act_text_shape"
+                android:text="添加图片"
+                android:gravity="center"
+                android:layout_marginRight="20dp"
+                />
+
+            <TextView
+                android:id="@+id/classify_detail_act_delete_image"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:background="@drawable/classify_detail_act_text_shape"
+                android:text="删除图片"
+                android:gravity="center"
+                />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>
